@@ -1,0 +1,46 @@
+Assessment Management System
+The Assessment Management System is a web application designed to streamline the process of managing student assessments, submissions, and data analysis. It allows instructors to create assignments, students to submit their work, and provides tools for analyzing submission data.
+
+Features
+Create Student: Instructors can add new students to the system, providing necessary information such as name, email, and date of birth.
+
+Create Course: Instructors can create courses, which serve as containers for assignments and student enrollments.
+
+Create Assignment: Instructors can create assignments, specifying details such as title, description, due date, and associated course.
+
+Submit Assignment: Students can submit their assignments through the system, attaching files and providing additional information if required.
+
+Analyze Data: The system provides tools for analyzing submission data, allowing instructors to gain insights into student performance and progress.
+
+Train TensorFlow Model: The system supports training TensorFlow models using the submitted data, enabling advanced analysis and predictions.
+
+Technologies Used
+Django: The backend framework used for building the web application.
+
+Google Cloud Platform (GCP): Services such as Firestore, Cloud Storage, and BigQuery are utilized for storing data and performing analysis.
+
+TensorFlow: Used for training machine learning models for data analysis.
+
+Setup
+
+Install dependencies:
+
+
+pip install -r requirements.txt
+Configure Google Cloud Platform credentials:
+
+Follow the instructions provided by Google Cloud Platform to set up authentication credentials and configure access to Firestore, Cloud Storage,Pubsub, Lookerstudio and BigQuery.
+
+Run the development server:
+
+
+python manage.py runserver
+Access the application:
+
+Visit http://localhost:8000 in your web browser to access the Assessment Management System.
+
+Contributing
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository, make your changes, and submit a pull request.
+
+License
+This project is licensed under the MIT License.

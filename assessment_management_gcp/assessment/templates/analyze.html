@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze Data and Export to BigQuery</title>
+</head>
+<body>
+    <h1>Analyze Data and Export to BigQuery</h1>
+    <p>Click the button below to analyze the data and export it to BigQuery.</p>
+    <form action="{% url 'analyze' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Analyze and Export</button>
+    </form>
+    {% if visualization_url %}
+    <p>Visualization URL: <a href="{{ visualization_url }}" target="_blank">{{ visualization_url }}</a></p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('C:/Users/Nandu/OneDrive/Documents/Assessment_project/assessment_management_gcp/assessment/templates/image.jpg'); /* Specify the path to your background image */
+            background-size: contain; 
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Ensure the background covers the entire viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+
+        
+
+        h1 {
+            text-align: center;
+            color: #333; /* Dark gray heading color */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            display: block;
+            padding: 10px 20px;
+            background-color: #007bff; /* Blue button color */
+            color: #fff; /* White button text color */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Assessment Management System</h1>
+        <ul>
+            <li><a href="{% url 'create_student' %}">Create Student</a></li>
+            <li><a href="{% url 'create_course' %}">Create Course</a></li>
+            <li><a href="{% url 'create_assignment' %}">Create Assignment</a></li>
+            <li><a href="{% url 'submit_assignment' %}">Submit Assignment</a></li>
+            <li><a href="{% url 'analyze' %}">Analyze Data</a></li>
+            <li><a href="{% url 'train_model' %}">Train TensorFlow Model</a></li>
+        </ul>
+    </div>
+</body>
+</html>
